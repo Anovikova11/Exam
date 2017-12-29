@@ -1,27 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   aff_z.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alnoviko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/22 23:55:23 by alnoviko          #+#    #+#             */
-/*   Updated: 2017/12/22 23:55:32 by alnoviko         ###   ########.fr       */
+/*   Created: 2017/12/29 13:57:13 by alnoviko          #+#    #+#             */
+/*   Updated: 2017/12/29 13:57:16 by alnoviko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int		main(int ac, char **av)
+void ft_putchar(char c)
 {
-	(void)ac;
-	(void)av;
-	write(1, "z\n", 2);
-	return (0);
+	write(1, &c, 1);
 }
 
-// Write a program that takes a string, and displays the first 'z'
-// character it encounters in it, followed by a newline. If there are no
-// 'z' characters in the string, the program writes 'z' followed
-// by a newline. If the number of parameters is not 1, the program displays
-// 'z' followed by a newline.
+int ft_putstr(char *str)
+{
+	int i;
+
+	i = 0;
+	while(str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	return(0);
+}
+
+// Write a function that displays a string on the standard output.
+
+// The pointer passed to the function contains the address of the string's first
+// character.
+
+// Your function must be declared as follows:
+
+// void	ft_putstr(char *str);

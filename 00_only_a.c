@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   only_z.c                                           :+:      :+:    :+:   */
+/*   00_only_a.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alnoviko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/25 20:49:29 by alnoviko          #+#    #+#             */
-/*   Updated: 2017/12/25 20:49:34 by alnoviko         ###   ########.fr       */
+/*   Created: 2017/12/30 13:46:51 by alnoviko          #+#    #+#             */
+/*   Updated: 2017/12/30 13:46:54 by alnoviko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int main()
 {
-	write(1, "z", 1);
-	return(0);
+	write(1, "a", 1);
+	return (0);
 }
 
-// Write a program that displays a 'z' character on the standard output.
+// Write a program that displays an 'a' character on the standard output.
